@@ -12,7 +12,7 @@
         "description": "",
         "authenticationSettings": {
           "oAuth2": {
-            "authorizationServerId": "dev-oauth-server"
+            "authorizationServerId": "uat-oauth-server"
           },
           "subscriptionKeyRequired": false
         },
