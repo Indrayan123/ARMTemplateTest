@@ -32,7 +32,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/jsonplaceholder')]",
       "type": "Microsoft.ApiManagement/service/apis",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": []
     },
     {
@@ -61,7 +61,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/jsonplaceholder/posts')]",
       "type": "Microsoft.ApiManagement/service/apis/operations",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'jsonplaceholder')]"
       ]
@@ -73,7 +73,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/jsonplaceholder/posts/policy')]",
       "type": "Microsoft.ApiManagement/service/apis/operations/policies",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'jsonplaceholder', 'posts')]"
       ]
@@ -85,7 +85,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/jsonplaceholder/policy')]",
       "type": "Microsoft.ApiManagement/service/apis/policies",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'JsonPlaceholder')]"
       ]
@@ -94,7 +94,7 @@
       "properties": {},
       "name": "[concat(parameters('ApimServiceName'), '/testproduct/jsonplaceholder')]",
       "type": "Microsoft.ApiManagement/service/products/apis",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'jsonplaceholder')]"
       ]
@@ -103,7 +103,7 @@
       "properties": {},
       "name": "[concat(parameters('ApimServiceName'), '/unlimited/jsonplaceholder')]",
       "type": "Microsoft.ApiManagement/service/products/apis",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'jsonplaceholder')]"
       ]

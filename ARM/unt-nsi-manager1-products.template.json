@@ -17,7 +17,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/testproduct')]",
       "type": "Microsoft.ApiManagement/service/products",
-      "apiVersion": "2019-01-01"
+      "apiVersion": "2017-05-10"
     },
     {
       "properties": {
@@ -28,7 +28,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/testproduct/administrators')]",
       "type": "Microsoft.ApiManagement/service/products/groups",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'testproduct')]"
       ]
@@ -42,7 +42,7 @@
       },
       "name": "[concat(parameters('ApimServiceName'), '/testproduct/developers')]",
       "type": "Microsoft.ApiManagement/service/products/groups",
-      "apiVersion": "2019-01-01",
+      "apiVersion": "2017-05-10",
       "dependsOn": [
         "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'testproduct')]"
       ]
