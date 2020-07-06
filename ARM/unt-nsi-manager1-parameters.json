@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "ApimServiceName": {
-      "value": "unt-nsi-manager1"
+      "value": "uat-nsi-manager"
     },
     "LinkedTemplatesBaseUrl": {
-      "value": "https://armtemplateloc.blob.core.windows.net/templatefolder"
+      "value": "https://raw.githubusercontent.com/Indrayan123/ARMTemplateTest/oldversion/ARM"
     },
 	"paramval": {
       "value": "qwqewqe"
