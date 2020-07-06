@@ -7,6 +7,9 @@
     },
     "LinkedTemplatesBaseUrl": {
       "value": "https://armtemplateloc.blob.core.windows.net/templatefolder"
+    },
+	"paramval": {
+      "value": "qwqewqe"
     }
   },
   "resources": []
